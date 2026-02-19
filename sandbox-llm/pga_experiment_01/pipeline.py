@@ -49,7 +49,7 @@ def moving_average(data, window_size=20):
     return pd.Series(data).rolling(window=window_size, min_periods=1).mean().tolist()
 
 if __name__ == "__main__":
-    STEPS = 500
+    STEPS = 1000
     
     # Run in parallel
     with multiprocessing.Pool(processes=2) as pool:
