@@ -1,0 +1,20 @@
+Loading data from c:\Users\ibhar\OneDrive\Desktop\attention-lab\sandbox-llm\pga-e1\names.txt
+Train Dataset Size: 205314
+Starting training for 1500 steps on names...
+Step 0: Train Loss 3.4382, Val Loss 3.4928
+Step 100: Train Loss 2.8200, Val Loss 2.7861
+Step 200: Train Loss 2.5998, Val Loss 2.7208
+Step 300: Train Loss 2.5553, Val Loss 2.6761
+Step 400: Train Loss 2.5539, Val Loss 2.6277
+Step 500: Train Loss 2.4930, Val Loss 2.5777
+Step 600: Train Loss 2.4994, Val Loss 2.5481
+Step 700: Train Loss 2.4636, Val Loss 2.5088
+Step 800: Train Loss 2.3847, Val Loss 2.4971
+Step 900: Train Loss 2.4532, Val Loss 2.5027
+Step 1000: Train Loss 2.4220, Val Loss 2.4835
+Step 1100: Train Loss 2.3984, Val Loss 2.4472
+Step 1200: Train Loss 2.4366, Val Loss 2.4764
+Step 1300: Train Loss 2.4159, Val Loss 2.4433
+Step 1400: Train Loss 2.3435, Val Loss 2.4417
+Step 1499: Train Loss 2.3740, Val Loss 2.4697
+Finished. Metrics saved to results/metrics_baseline_names_1500.json

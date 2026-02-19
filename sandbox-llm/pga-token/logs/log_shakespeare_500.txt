@@ -1,0 +1,10 @@
+Loading data from C:\Users\ibhar\OneDrive\Desktop\attention-lab\sandbox-llm\pga-token\shakespeare.txt
+Train Dataset Size: 1003838
+Starting training for 500 steps on shakespeare...
+Step 0: Train Loss 3.4532, Val Loss 3.4227
+Step 100: Train Loss 2.7614, Val Loss 2.8020
+Step 200: Train Loss 2.5454, Val Loss 2.7233
+Step 300: Train Loss 2.4693, Val Loss 2.6763
+Step 400: Train Loss 2.4591, Val Loss 2.6406
+Step 499: Train Loss 2.4365, Val Loss 2.5980
+Finished. Metrics saved to results/metrics_shakespeare_500.json
