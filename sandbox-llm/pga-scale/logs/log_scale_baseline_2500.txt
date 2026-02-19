@@ -1,0 +1,32 @@
+Loading data from C:\Users\ibhar\OneDrive\Desktop\attention-lab\sandbox-llm\pga-scale\../pga-token/shakespeare.txt
+Dataset Vocab Size: 65
+Dataset Vocab Size: 61
+Model Parameters: 0.21M
+Starting scaled training for 2500 steps on baseline...
+Step 0: Train Loss 4.3550, Val Loss 4.2429
+Step 100: Train Loss 2.6347, Val Loss 4.9308
+Step 200: Train Loss 2.4647, Val Loss 5.2026
+Step 300: Train Loss 2.3808, Val Loss 5.4154
+Step 400: Train Loss 2.2843, Val Loss 5.7302
+Step 500: Train Loss 2.1847, Val Loss 5.9049
+Step 600: Train Loss 2.1580, Val Loss 6.0482
+Step 700: Train Loss 2.1173, Val Loss 6.3396
+Step 800: Train Loss 2.0421, Val Loss 6.3103
+Step 900: Train Loss 2.0323, Val Loss 6.5266
+Step 1000: Train Loss 1.9324, Val Loss 6.6412
+Step 1100: Train Loss 1.9066, Val Loss 6.6898
+Step 1200: Train Loss 1.8785, Val Loss 6.6578
+Step 1300: Train Loss 1.8362, Val Loss 6.7424
+Step 1400: Train Loss 1.8617, Val Loss 6.9836
+Step 1500: Train Loss 1.8521, Val Loss 7.1399
+Step 1600: Train Loss 1.8222, Val Loss 7.1718
+Step 1700: Train Loss 1.8956, Val Loss 7.2377
+Step 1800: Train Loss 1.7389, Val Loss 7.4189
+Step 1900: Train Loss 1.7567, Val Loss 7.4354
+Step 2000: Train Loss 1.7369, Val Loss 7.4846
+Step 2100: Train Loss 1.7817, Val Loss 7.6168
+Step 2200: Train Loss 1.7537, Val Loss 7.5065
+Step 2300: Train Loss 1.7601, Val Loss 7.4971
+Step 2400: Train Loss 1.6698, Val Loss 7.5142
+Step 2499: Train Loss 1.6723, Val Loss 7.5321
+Finished. Metrics saved to results/metrics_scale_baseline_2500.json
