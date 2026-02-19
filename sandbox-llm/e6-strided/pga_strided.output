@@ -1,0 +1,48 @@
+Training to 500 steps...
+--- Training PGA for 500 steps ---
+step 0: train loss 4.3028, val loss 4.2992
+step 250: train loss 2.6377, val loss 2.6360
+step 499: train loss 2.4898, val loss 2.4926
+PGA finished in 1273.69s
+--- Training Baseline for 500 steps ---
+step 0: train loss 4.3472, val loss 4.3471
+step 250: train loss 2.6552, val loss 2.6672
+step 499: train loss 2.5082, val loss 2.5076
+Baseline finished in 128.13s
+
+Training to 1000 steps...
+--- Training PGA for 500 steps ---
+step 0: train loss 2.4836, val loss 2.4858
+step 250: train loss 2.4145, val loss 2.4238
+step 499: train loss 2.3737, val loss 2.3815
+PGA finished in 1245.02s
+--- Training Baseline for 500 steps ---
+step 0: train loss 2.5102, val loss 2.5116
+step 250: train loss 2.4356, val loss 2.4462
+step 499: train loss 2.3885, val loss 2.4017
+Baseline finished in 126.25s
+
+Training to 1500 steps...
+--- Training PGA for 500 steps ---
+step 0: train loss 2.3701, val loss 2.3792
+step 250: train loss 2.3347, val loss 2.3488
+step 499: train loss 2.3058, val loss 2.3282
+PGA finished in 1272.28s
+--- Training Baseline for 500 steps ---
+step 0: train loss 2.3913, val loss 2.3965
+step 250: train loss 2.3475, val loss 2.3638
+step 499: train loss 2.3024, val loss 2.3182
+Baseline finished in 127.92s
+
+Training to 2000 steps...
+--- Training PGA for 500 steps ---
+step 0: train loss 2.3167, val loss 2.3278
+step 250: train loss 2.2863, val loss 2.3058
+step 499: train loss 2.2573, val loss 2.2798
+PGA finished in 1270.26s
+--- Training Baseline for 500 steps ---
+step 0: train loss 2.3125, val loss 2.3190
+step 250: train loss 2.2542, val loss 2.2655
+step 499: train loss 2.2139, val loss 2.2273
+Baseline finished in 127.40s
+Experiment Complete.
