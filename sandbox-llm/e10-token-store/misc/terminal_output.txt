@@ -1,0 +1,192 @@
+[16:54:30] [SYSTEM] ============================================================
+[16:54:30] [SYSTEM] E10 — Token-Keyed Store + Improved PGA Buffer — 3-Way
+[16:54:30] [SYSTEM] Config: 5L, embd=16, lr=0.005, steps=5000
+[16:54:30] [SYSTEM] E9 Buffer: cap=512, k=8
+[16:54:30] [SYSTEM] E10 Store: unbounded, 70/30 split, batched SVD, k=8
+[16:54:30] [SYSTEM] Dataset: enwik8, block=16
+[16:54:30] [SYSTEM] ============================================================
+[16:54:30] [SYSTEM] Copied enwik8 from e9-retro-feedback
+[16:54:32] [SYSTEM] enwik8: 99,621,832 chars, 6064 unique
+[16:54:40] [SYSTEM] Train: 89,659,648, Val: 9,962,184
+[16:54:40] [SYSTEM] Vocab: 6064
+[16:54:40] [SYSTEM] ═══ Training 3 models (Baseline + E9 parallel, E10 in main) ═══
+[16:54:40] [E10-TokenStore] Initialized — 209,920 params
+[16:54:42] [Baseline] Initialized — 209,664 params
+[16:54:42] [E9-Buffer] Initialized — 209,920 params
+[16:54:42] [E10-TokenStore] Step     0/5000 | Train: 8.9181 | Val: 8.9140 | Step: 164.7ms | ETA: 0:57:02 | Store: 1616 vecs, 78 tokens, 0.10MB
+[16:54:43] [Baseline] Step     0/5000 | Train: 8.8927 | Val: 8.8744 | Step: 17.3ms | ETA: 0:26:25
+[16:54:44] [E9-Buffer] Step     0/5000 | Train: 8.9119 | Val: 8.9056 | Step: 23.5ms | ETA: 1:02:08
+[16:54:45] [Baseline] Step   100/5000 | Train: 3.7751 | Val: 3.7503 | Step: 9.8ms | ETA: 0:01:19
+[16:54:45] [E10-TokenStore] Step   100/5000 | Train: 3.5950 | Val: 3.7350 | Step: 17.0ms | ETA: 0:02:25 | Store: 4816 vecs, 105 tokens, 0.29MB
+[16:54:46] [Baseline] Step   200/5000 | Train: 3.6545 | Val: 3.6635 | Step: 10.8ms | ETA: 0:01:11
+[16:54:46] [E9-Buffer] Step   100/5000 | Train: 3.6064 | Val: 3.7524 | Step: 15.5ms | ETA: 0:02:27
+[16:54:47] [Baseline] Step   300/5000 | Train: 3.3535 | Val: 3.2508 | Step: 10.4ms | ETA: 0:01:07
+[16:54:48] [E10-TokenStore] Step   200/5000 | Train: 3.3726 | Val: 3.3721 | Step: 17.1ms | ETA: 0:02:21 | Store: 8016 vecs, 113 tokens, 0.49MB
+[16:54:48] [E9-Buffer] Step   200/5000 | Train: 3.3747 | Val: 3.3731 | Step: 15.7ms | ETA: 0:02:07
+[16:54:49] [Baseline] Step   400/5000 | Train: 3.4223 | Val: 3.2969 | Step: 11.2ms | ETA: 0:01:04
+[16:54:50] [Baseline] Step   500/5000 | Train: 3.1046 | Val: 3.3297 | Step: 10.1ms | ETA: 0:01:03
+[16:54:51] [E9-Buffer] Step   300/5000 | Train: 3.2602 | Val: 3.1941 | Step: 14.9ms | ETA: 0:01:59
+[16:54:51] [E10-TokenStore] Step   300/5000 | Train: 3.2495 | Val: 3.1796 | Step: 19.7ms | ETA: 0:02:25 | Store: 11216 vecs, 120 tokens, 0.68MB
+[16:54:52] [Baseline] Step   600/5000 | Train: 3.0759 | Val: 3.0410 | Step: 12.3ms | ETA: 0:01:02
+[16:54:53] [Baseline] Step   700/5000 | Train: 2.9716 | Val: 3.1345 | Step: 10.3ms | ETA: 0:01:00
+[16:54:53] [E9-Buffer] Step   400/5000 | Train: 3.4935 | Val: 3.2297 | Step: 15.8ms | ETA: 0:01:55
+[16:54:54] [Baseline] Step   800/5000 | Train: 3.0717 | Val: 2.9362 | Step: 12.8ms | ETA: 0:00:58
+[16:54:55] [E10-TokenStore] Step   400/5000 | Train: 3.4904 | Val: 3.2230 | Step: 22.5ms | ETA: 0:02:30 | Store: 14416 vecs, 127 tokens, 0.88MB
+[16:54:55] [E9-Buffer] Step   500/5000 | Train: 3.1311 | Val: 3.1956 | Step: 14.9ms | ETA: 0:01:50
+[16:54:56] [Baseline] Step   900/5000 | Train: 2.8934 | Val: 3.1220 | Step: 10.4ms | ETA: 0:00:56
+[16:54:57] [Baseline] Step  1000/5000 | Train: 3.1858 | Val: 3.3828 | Step: 11.3ms | ETA: 0:00:55
+[16:54:58] [E9-Buffer] Step   600/5000 | Train: 3.2001 | Val: 3.0691 | Step: 15.1ms | ETA: 0:01:46
+[16:54:58] [Baseline] Step  1100/5000 | Train: 2.9186 | Val: 2.9537 | Step: 9.9ms | ETA: 0:00:53
+[16:54:59] [E10-TokenStore] Step   500/5000 | Train: 3.1146 | Val: 3.1853 | Step: 41.0ms | ETA: 0:02:37 | Store: 17616 vecs, 133 tokens, 1.08MB
+[16:55:00] [Baseline] Step  1200/5000 | Train: 3.0032 | Val: 3.1071 | Step: 10.5ms | ETA: 0:00:52
+[16:55:00] [E9-Buffer] Step   700/5000 | Train: 3.1759 | Val: 3.0877 | Step: 16.9ms | ETA: 0:01:43
+[16:55:01] [Baseline] Step  1300/5000 | Train: 3.1077 | Val: 2.9104 | Step: 11.9ms | ETA: 0:00:50
+[16:55:02] [E9-Buffer] Step   800/5000 | Train: 3.0348 | Val: 3.1540 | Step: 16.3ms | ETA: 0:01:40
+[16:55:02] [Baseline] Step  1400/5000 | Train: 3.0681 | Val: 3.0454 | Step: 11.9ms | ETA: 0:00:49
+[16:55:04] [Baseline] Step  1500/5000 | Train: 2.9434 | Val: 3.0401 | Step: 10.2ms | ETA: 0:00:48
+[16:55:04] [E10-TokenStore] Step   600/5000 | Train: 3.1927 | Val: 3.0464 | Step: 27.8ms | ETA: 0:02:43 | Store: 20816 vecs, 134 tokens, 1.27MB
+[16:55:05] [E9-Buffer] Step   900/5000 | Train: 3.1541 | Val: 3.0663 | Step: 16.5ms | ETA: 0:01:38
+[16:55:05] [Baseline] Step  1600/5000 | Train: 2.9319 | Val: 3.0929 | Step: 15.7ms | ETA: 0:00:47
+[16:55:07] [Baseline] Step  1700/5000 | Train: 2.7153 | Val: 2.9222 | Step: 11.0ms | ETA: 0:00:45
+[16:55:07] [E9-Buffer] Step  1000/5000 | Train: 3.1248 | Val: 3.3131 | Step: 16.3ms | ETA: 0:01:35
+[16:55:08] [Baseline] Step  1800/5000 | Train: 2.8635 | Val: 2.8892 | Step: 11.4ms | ETA: 0:00:44
+[16:55:09] [E9-Buffer] Step  1100/5000 | Train: 3.1552 | Val: 2.9870 | Step: 15.5ms | ETA: 0:01:33
+[16:55:09] [Baseline] Step  1900/5000 | Train: 2.9255 | Val: 2.8972 | Step: 10.4ms | ETA: 0:00:43
+[16:55:10] [E10-TokenStore] Step   700/5000 | Train: 3.1733 | Val: 3.0723 | Step: 39.1ms | ETA: 0:02:51 | Store: 24016 vecs, 137 tokens, 1.47MB
+[16:55:11] [Baseline] Step  2000/5000 | Train: 3.0727 | Val: 2.9971 | Step: 11.2ms | ETA: 0:00:41
+[16:55:12] [E9-Buffer] Step  1200/5000 | Train: 3.0525 | Val: 3.0185 | Step: 17.2ms | ETA: 0:01:31
+[16:55:12] [Baseline] Step  2100/5000 | Train: 2.7646 | Val: 2.8522 | Step: 11.1ms | ETA: 0:00:40
+[16:55:14] [Baseline] Step  2200/5000 | Train: 2.9196 | Val: 2.8946 | Step: 10.2ms | ETA: 0:00:38
+[16:55:14] [E9-Buffer] Step  1300/5000 | Train: 3.1150 | Val: 3.0862 | Step: 15.3ms | ETA: 0:01:28
+[16:55:15] [Baseline] Step  2300/5000 | Train: 2.9820 | Val: 2.8097 | Step: 10.0ms | ETA: 0:00:37
+[16:55:16] [E10-TokenStore] Step   800/5000 | Train: 3.0528 | Val: 3.1415 | Step: 43.7ms | ETA: 0:02:58 | Store: 27216 vecs, 138 tokens, 1.66MB
+[16:55:16] [Baseline] Step  2400/5000 | Train: 2.9718 | Val: 3.0137 | Step: 14.3ms | ETA: 0:00:36
+[16:55:17] [E9-Buffer] Step  1400/5000 | Train: 3.1736 | Val: 3.0152 | Step: 15.9ms | ETA: 0:01:26
+[16:55:18] [Baseline] Step  2500/5000 | Train: 2.9283 | Val: 2.8523 | Step: 11.0ms | ETA: 0:00:34
+[16:55:19] [E9-Buffer] Step  1500/5000 | Train: 3.0079 | Val: 3.0353 | Step: 17.2ms | ETA: 0:01:23
+[16:55:19] [Baseline] Step  2600/5000 | Train: 2.8989 | Val: 2.7973 | Step: 10.5ms | ETA: 0:00:33
+[16:55:21] [Baseline] Step  2700/5000 | Train: 2.8125 | Val: 3.0355 | Step: 10.8ms | ETA: 0:00:31
+[16:55:21] [E9-Buffer] Step  1600/5000 | Train: 3.0871 | Val: 2.7938 | Step: 16.9ms | ETA: 0:01:21
+[16:55:22] [Baseline] Step  2800/5000 | Train: 2.8778 | Val: 2.8100 | Step: 9.8ms | ETA: 0:00:30
+[16:55:23] [E10-TokenStore] Step   900/5000 | Train: 3.1154 | Val: 3.0499 | Step: 48.8ms | ETA: 0:03:05 | Store: 30416 vecs, 151 tokens, 1.86MB
+[16:55:23] [Baseline] Step  2900/5000 | Train: 2.8106 | Val: 2.9024 | Step: 10.7ms | ETA: 0:00:29
+[16:55:24] [E9-Buffer] Step  1700/5000 | Train: 2.9543 | Val: 2.9204 | Step: 16.0ms | ETA: 0:01:18
+[16:55:25] [Baseline] Step  3000/5000 | Train: 2.8225 | Val: 2.8518 | Step: 10.1ms | ETA: 0:00:27
+[16:55:26] [E9-Buffer] Step  1800/5000 | Train: 2.9864 | Val: 3.0577 | Step: 15.8ms | ETA: 0:01:16
+[16:55:26] [Baseline] Step  3100/5000 | Train: 2.7193 | Val: 2.9553 | Step: 10.1ms | ETA: 0:00:26
+[16:55:27] [Baseline] Step  3200/5000 | Train: 2.9368 | Val: 2.8527 | Step: 10.5ms | ETA: 0:00:24
+[16:55:28] [E9-Buffer] Step  1900/5000 | Train: 2.9957 | Val: 2.9518 | Step: 15.7ms | ETA: 0:01:13
+[16:55:29] [Baseline] Step  3300/5000 | Train: 2.9789 | Val: 2.8127 | Step: 10.4ms | ETA: 0:00:23
+[16:55:30] [E10-TokenStore] Step  1000/5000 | Train: 3.1078 | Val: 3.3083 | Step: 39.9ms | ETA: 0:03:11 | Store: 33616 vecs, 154 tokens, 2.05MB
+[16:55:30] [Baseline] Step  3400/5000 | Train: 2.9329 | Val: 2.8522 | Step: 10.7ms | ETA: 0:00:22
+[16:55:31] [E9-Buffer] Step  2000/5000 | Train: 2.8123 | Val: 3.0212 | Step: 16.4ms | ETA: 0:01:11
+[16:55:31] [Baseline] Step  3500/5000 | Train: 2.9686 | Val: 2.8974 | Step: 9.2ms | ETA: 0:00:20
+[16:55:33] [Baseline] Step  3600/5000 | Train: 2.8575 | Val: 2.7616 | Step: 11.4ms | ETA: 0:00:19
+[16:55:33] [E9-Buffer] Step  2100/5000 | Train: 2.8159 | Val: 2.9477 | Step: 16.6ms | ETA: 0:01:08
+[16:55:34] [Baseline] Step  3700/5000 | Train: 2.6950 | Val: 2.9334 | Step: 10.7ms | ETA: 0:00:17
+[16:55:35] [E9-Buffer] Step  2200/5000 | Train: 3.1254 | Val: 3.0310 | Step: 16.2ms | ETA: 0:01:06
+[16:55:36] [Baseline] Step  3800/5000 | Train: 2.8376 | Val: 3.0401 | Step: 13.7ms | ETA: 0:00:16
+[16:55:37] [Baseline] Step  3900/5000 | Train: 2.8235 | Val: 2.8893 | Step: 9.6ms | ETA: 0:00:15
+[16:55:38] [E9-Buffer] Step  2300/5000 | Train: 2.9458 | Val: 2.8724 | Step: 15.1ms | ETA: 0:01:04
+[16:55:38] [E10-TokenStore] Step  1100/5000 | Train: 3.1354 | Val: 2.9850 | Step: 37.6ms | ETA: 0:03:18 | Store: 36816 vecs, 156 tokens, 2.25MB
+[16:55:38] [Baseline] Step  4000/5000 | Train: 2.7103 | Val: 2.6733 | Step: 10.8ms | ETA: 0:00:13
+[16:55:40] [Baseline] Step  4100/5000 | Train: 2.7916 | Val: 2.8355 | Step: 10.2ms | ETA: 0:00:12
+[16:55:40] [E9-Buffer] Step  2400/5000 | Train: 2.8531 | Val: 2.9954 | Step: 16.1ms | ETA: 0:01:01
+[16:55:41] [Baseline] Step  4200/5000 | Train: 2.8055 | Val: 2.9850 | Step: 11.1ms | ETA: 0:00:11
+[16:55:42] [E9-Buffer] Step  2500/5000 | Train: 2.9923 | Val: 2.8725 | Step: 16.2ms | ETA: 0:00:59
+[16:55:43] [Baseline] Step  4300/5000 | Train: 2.8493 | Val: 2.7522 | Step: 11.5ms | ETA: 0:00:09
+[16:55:44] [Baseline] Step  4400/5000 | Train: 2.6922 | Val: 2.8321 | Step: 11.6ms | ETA: 0:00:08
+[16:55:45] [E9-Buffer] Step  2600/5000 | Train: 2.8222 | Val: 2.9267 | Step: 15.0ms | ETA: 0:00:56
+[16:55:45] [Baseline] Step  4500/5000 | Train: 3.0959 | Val: 2.9766 | Step: 11.8ms | ETA: 0:00:06
+[16:55:46] [E10-TokenStore] Step  1200/5000 | Train: 3.0502 | Val: 3.0000 | Step: 37.9ms | ETA: 0:03:24 | Store: 40016 vecs, 162 tokens, 2.44MB
+[16:55:47] [Baseline] Step  4600/5000 | Train: 2.7397 | Val: 2.7989 | Step: 12.3ms | ETA: 0:00:05
+[16:55:47] [E9-Buffer] Step  2700/5000 | Train: 3.0735 | Val: 2.7532 | Step: 16.0ms | ETA: 0:00:54
+[16:55:48] [Baseline] Step  4700/5000 | Train: 2.8872 | Val: 2.9321 | Step: 11.2ms | ETA: 0:00:04
+[16:55:49] [Baseline] Step  4800/5000 | Train: 2.8912 | Val: 2.8143 | Step: 11.4ms | ETA: 0:00:02
+[16:55:49] [E9-Buffer] Step  2800/5000 | Train: 3.0661 | Val: 2.9979 | Step: 16.2ms | ETA: 0:00:51
+[16:55:51] [Baseline] Step  4900/5000 | Train: 2.9001 | Val: 2.6654 | Step: 10.2ms | ETA: 0:00:01
+[16:55:52] [E9-Buffer] Step  2900/5000 | Train: 2.8571 | Val: 2.9830 | Step: 16.1ms | ETA: 0:00:49
+[16:55:52] [Baseline] DONE — 69.0s | 10.9ms/step | Train: 2.8760 | Val: 2.7419
+[16:55:54] [E9-Buffer] Step  3000/5000 | Train: 3.1129 | Val: 2.8653 | Step: 11.6ms | ETA: 0:00:46
+[16:55:55] [E10-TokenStore] Step  1300/5000 | Train: 3.0714 | Val: 3.0425 | Step: 33.7ms | ETA: 0:03:28 | Store: 43216 vecs, 172 tokens, 2.64MB
+[16:55:55] [E9-Buffer] Step  3100/5000 | Train: 2.7908 | Val: 2.9802 | Step: 11.8ms | ETA: 0:00:44
+[16:55:57] [E9-Buffer] Step  3200/5000 | Train: 2.7107 | Val: 2.8990 | Step: 13.2ms | ETA: 0:00:41
+[16:55:59] [E9-Buffer] Step  3300/5000 | Train: 2.8487 | Val: 2.8033 | Step: 11.9ms | ETA: 0:00:39
+[16:56:01] [E9-Buffer] Step  3400/5000 | Train: 2.7632 | Val: 2.8697 | Step: 11.8ms | ETA: 0:00:36
+[16:56:03] [E9-Buffer] Step  3500/5000 | Train: 3.1592 | Val: 2.9629 | Step: 13.0ms | ETA: 0:00:34
+[16:56:04] [E10-TokenStore] Step  1400/5000 | Train: 3.1625 | Val: 3.0433 | Step: 44.2ms | ETA: 0:03:30 | Store: 46416 vecs, 174 tokens, 2.83MB
+[16:56:05] [E9-Buffer] Step  3600/5000 | Train: 2.9201 | Val: 2.8282 | Step: 11.4ms | ETA: 0:00:31
+[16:56:06] [E9-Buffer] Step  3700/5000 | Train: 2.7757 | Val: 2.9838 | Step: 12.6ms | ETA: 0:00:29
+[16:56:08] [E9-Buffer] Step  3800/5000 | Train: 2.7530 | Val: 2.8265 | Step: 12.5ms | ETA: 0:00:26
+[16:56:10] [E9-Buffer] Step  3900/5000 | Train: 2.8598 | Val: 2.9170 | Step: 12.5ms | ETA: 0:00:24
+[16:56:12] [E9-Buffer] Step  4000/5000 | Train: 2.8510 | Val: 2.9096 | Step: 13.4ms | ETA: 0:00:22
+[16:56:12] [E10-TokenStore] Step  1500/5000 | Train: 3.0171 | Val: 3.0033 | Step: 48.0ms | ETA: 0:03:31 | Store: 49616 vecs, 184 tokens, 3.03MB
+[16:56:14] [E9-Buffer] Step  4100/5000 | Train: 2.9653 | Val: 2.8061 | Step: 12.4ms | ETA: 0:00:19
+[16:56:16] [E9-Buffer] Step  4200/5000 | Train: 2.7521 | Val: 2.8469 | Step: 12.5ms | ETA: 0:00:17
+[16:56:17] [E9-Buffer] Step  4300/5000 | Train: 2.7727 | Val: 2.8522 | Step: 13.0ms | ETA: 0:00:15
+[16:56:19] [E9-Buffer] Step  4400/5000 | Train: 2.9416 | Val: 2.8536 | Step: 12.4ms | ETA: 0:00:13
+[16:56:21] [E9-Buffer] Step  4500/5000 | Train: 3.1342 | Val: 2.8005 | Step: 11.3ms | ETA: 0:00:10
+[16:56:22] [E10-TokenStore] Step  1600/5000 | Train: 3.0809 | Val: 2.7851 | Step: 44.3ms | ETA: 0:03:33 | Store: 52816 vecs, 185 tokens, 3.22MB
+[16:56:23] [E9-Buffer] Step  4600/5000 | Train: 2.8610 | Val: 2.8215 | Step: 12.8ms | ETA: 0:00:08
+[16:56:25] [E9-Buffer] Step  4700/5000 | Train: 2.9419 | Val: 2.9991 | Step: 13.1ms | ETA: 0:00:06
+[16:56:27] [E9-Buffer] Step  4800/5000 | Train: 2.8528 | Val: 2.7153 | Step: 16.0ms | ETA: 0:00:04
+[16:56:29] [E9-Buffer] Step  4900/5000 | Train: 2.7581 | Val: 2.9549 | Step: 13.4ms | ETA: 0:00:02
+[16:56:31] [E9-Buffer] DONE — 107.5s | 14.7ms/step | Train: 2.8543 | Val: 2.8822
+[16:56:32] [E10-TokenStore] Step  1700/5000 | Train: 2.9307 | Val: 2.9221 | Step: 151.4ms | ETA: 0:03:34 | Store: 56016 vecs, 189 tokens, 3.42MB
+[16:56:41] [E10-TokenStore] Step  1800/5000 | Train: 2.9818 | Val: 3.0695 | Step: 38.7ms | ETA: 0:03:31 | Store: 59216 vecs, 190 tokens, 3.61MB
+[16:56:49] [E10-TokenStore] Step  1900/5000 | Train: 2.9843 | Val: 2.9022 | Step: 55.5ms | ETA: 0:03:28 | Store: 62416 vecs, 198 tokens, 3.81MB
+[16:56:58] [E10-TokenStore] Step  2000/5000 | Train: 2.8148 | Val: 2.9943 | Step: 35.3ms | ETA: 0:03:24 | Store: 65616 vecs, 203 tokens, 4.00MB
+[16:57:09] [E10-TokenStore] Step  2100/5000 | Train: 2.8058 | Val: 2.9444 | Step: 84.0ms | ETA: 0:03:23 | Store: 68816 vecs, 205 tokens, 4.20MB
+[16:57:19] [E10-TokenStore] Step  2200/5000 | Train: 3.0998 | Val: 3.0141 | Step: 68.9ms | ETA: 0:03:20 | Store: 72016 vecs, 207 tokens, 4.40MB
+[16:57:30] [E10-TokenStore] Step  2300/5000 | Train: 2.9084 | Val: 2.8973 | Step: 66.3ms | ETA: 0:03:17 | Store: 75216 vecs, 215 tokens, 4.59MB
+[16:57:41] [E10-TokenStore] Step  2400/5000 | Train: 2.8002 | Val: 3.0147 | Step: 65.5ms | ETA: 0:03:13 | Store: 78416 vecs, 220 tokens, 4.79MB
+[16:57:52] [E10-TokenStore] Step  2500/5000 | Train: 2.9920 | Val: 2.8496 | Step: 70.3ms | ETA: 0:03:09 | Store: 81616 vecs, 230 tokens, 4.98MB
+[16:58:04] [E10-TokenStore] Step  2600/5000 | Train: 2.8239 | Val: 2.9364 | Step: 78.4ms | ETA: 0:03:06 | Store: 84816 vecs, 233 tokens, 5.18MB
+[16:58:16] [E10-TokenStore] Step  2700/5000 | Train: 3.0354 | Val: 2.7679 | Step: 50.0ms | ETA: 0:03:02 | Store: 88016 vecs, 233 tokens, 5.37MB
+[16:58:28] [E10-TokenStore] Step  2800/5000 | Train: 3.0858 | Val: 2.9975 | Step: 88.2ms | ETA: 0:02:57 | Store: 91216 vecs, 236 tokens, 5.57MB
+[16:58:42] [E10-TokenStore] Step  2900/5000 | Train: 2.8366 | Val: 2.9627 | Step: 58.7ms | ETA: 0:02:53 | Store: 94416 vecs, 237 tokens, 5.76MB
+[16:58:56] [E10-TokenStore] Step  3000/5000 | Train: 3.0723 | Val: 2.8432 | Step: 70.5ms | ETA: 0:02:49 | Store: 9761[16:56:32] [E10-TokenStore] Step  1700/5000 | Train: 2.9307 | Val: 2.9221 | Step: 151.4ms | ETA: 0:03:34 | Store: 56016 vecs, 189 tokens, 3.42MB
+[16:56:41] [E10-TokenStore] Step  1800/5000 | Train: 2.9818 | Val: 3.0695 | Step: 38.7ms | ETA: 0:03:31 | Store: 59216 vecs, 190 tokens, 3.61MB
+[16:56:49] [E10-TokenStore] Step  1900/5000 | Train: 2.9843 | Val: 2.9022 | Step: 55.5ms | ETA: 0:03:28 | Store: 62416 vecs, 198 tokens, 3.81MB
+[16:56:58] [E10-TokenStore] Step  2000/5000 | Train: 2.8148 | Val: 2.9943 | Step: 35.3ms | ETA: 0:03:24 | Store: 65616 vecs, 203 tokens, 4.00MB
+[16:57:09] [E10-TokenStore] Step  2100/5000 | Train: 2.8058 | Val: 2.9444 | Step: 84.0ms | ETA: 0:03:23 | Store: 68816 vecs, 205 tokens, 4.20MB
+[16:57:19] [E10-TokenStore] Step  2200/5000 | Train: 3.0998 | Val: 3.0141 | Step: 68.9ms | ETA: 0:03:20 | Store: 72016 vecs, 207 tokens, 4.40MB
+[16:57:30] [E10-TokenStore] Step  2300/5000 | Train: 2.9084 | Val: 2.8973 | Step: 66.3ms | ETA: 0:03:17 | Store: 75216 vecs, 215 tokens, 4.59MB
+[16:57:41] [E10-TokenStore] Step  2400/5000 | Train: 2.8002 | Val: 3.0147 | Step: 65.5ms | ETA: 0:03:13 | Store: 78416 vecs, 220 tokens, 4.79MB
+[16:57:52] [E10-TokenStore] Step  2500/5000 | Train: 2.9920 | Val: 2.8496 | Step: 70.3ms | ETA: 0:03:09 | Store: 81616 vecs, 230 tokens, 4.98MB
+[16:58:04] [E10-TokenStore] Step  2600/5000 | Train: 2.8239 | Val: 2.9364 | Step: 78.4ms | ETA: 0:03:06 | Store: 84816 vecs, 233 tokens, 5.18MB
+[16:58:16] [E10-TokenStore] Step  2700/5000 | Train: 3.0354 | Val: 2.7679 | Step: 50.0ms | ETA: 0:03:02 | Store: 88016 vecs, 233 tokens, 5.37MB
+[16:58:28] [E10-TokenStore] Step  2800/5000 | Train: 3.0858 | Val: 2.9975 | Step: 88.2ms | ETA: 0:02:57 | Store: 91216 vecs, 236 tokens, 5.57MB
+[16:58:42] [E10-TokenStore] Step  2900/5000 | Train: 2.8366 | Val: 2.9627 | Step: 58.7ms | ETA: 0:02:53 | Store: 94416 vecs, 237 tokens, 5.76MB
+[16:58:56] [E10-TokenStore] Step  3000/5000 | Train: 3.0723 | Val: 2.8432 | Step: 70.5ms | ETA: 0:02:49 | Store: 97616 vecs, 249 tokens, 5.96MB
+[16:59:10] [E10-TokenStore] Step  3100/5000 | Train: 2.8045 | Val: 2.9649 | Step: 80.6ms | ETA: 0:02:44 | Store: 100816 vecs, 250 tokens, 6.15MB
+[16:59:25] [E10-TokenStore] Step  3200/5000 | Train: 2.7517 | Val: 2.9022 | Step: 55.9ms | ETA: 0:02:39 | Store: 104016 vecs, 261 tokens, 6.35MB
+[16:59:40] [E10-TokenStore] Step  3300/5000 | Train: 2.8696 | Val: 2.8723 | Step: 65.0ms | ETA: 0:02:33 | Store: 107216 vecs, 269 tokens, 6.54MB
+[16:59:56] [E10-TokenStore] Step  3400/5000 | Train: 2.8098 | Val: 2.8800 | Step: 61.6ms | ETA: 0:02:27 | Store: 110416 vecs, 272 tokens, 6.74MB
+[17:00:13] [E10-TokenStore] Step  3500/5000 | Train: 3.1151 | Val: 2.9415 | Step: 88.0ms | ETA: 0:02:21 | Store: 113616 vecs, 278 tokens, 6.93MB
+[17:00:31] [E10-TokenStore] Step  3600/5000 | Train: 2.8960 | Val: 2.7970 | Step: 104.2ms | ETA: 0:02:15 | Store: 116816 vecs, 279 tokens, 7.13MB
+[17:00:48] [E10-TokenStore] Step  3700/5000 | Train: 2.7727 | Val: 2.9679 | Step: 89.6ms | ETA: 0:02:08 | Store: 120016 vecs, 283 tokens, 7.33MB
+[17:01:05] [E10-TokenStore] Step  3800/5000 | Train: 2.7196 | Val: 2.8455 | Step: 71.0ms | ETA: 0:02:00 | Store: 123216 vecs, 286 tokens, 7.52MB
+[17:01:23] [E10-TokenStore] Step  3900/5000 | Train: 2.8264 | Val: 2.8908 | Step: 99.8ms | ETA: 0:01:53 | Store: 126416 vecs, 287 tokens, 7.72MB
+[17:01:42] [E10-TokenStore] Step  4000/5000 | Train: 2.8523 | Val: 2.8955 | Step: 119.6ms | ETA: 0:01:44 | Store: 129616 vecs, 289 tokens, 7.91MB
+[17:02:03] [E10-TokenStore] Step  4100/5000 | Train: 2.9136 | Val: 2.8184 | Step: 148.5ms | ETA: 0:01:36 | Store: 132816 vecs, 292 tokens, 8.11MB
+[17:02:23] [E10-TokenStore] Step  4200/5000 | Train: 2.7716 | Val: 2.8600 | Step: 81.8ms | ETA: 0:01:27 | Store: 136016 vecs, 292 tokens, 8.30MB
+[17:02:44] [E10-TokenStore] Step  4300/5000 | Train: 2.7274 | Val: 2.7758 | Step: 103.8ms | ETA: 0:01:18 | Store: 139216 vecs, 293 tokens, 8.50MB
+[17:03:09] [E10-TokenStore] Step  4400/5000 | Train: 2.9783 | Val: 2.8448 | Step: 117.9ms | ETA: 0:01:09 | Store: 142416 vecs, 302 tokens, 8.69MB
+[17:03:36] [E10-TokenStore] Step  4500/5000 | Train: 3.1546 | Val: 2.8101 | Step: 79.4ms | ETA: 0:00:59 | Store: 145616 vecs, 312 tokens, 8.89MB
+[17:04:05] [E10-TokenStore] Step  4600/5000 | Train: 2.8084 | Val: 2.8026 | Step: 175.8ms | ETA: 0:00:48 | Store: 148816 vecs, 314 tokens, 9.08MB
+[17:04:28] [E10-TokenStore] Step  4700/5000 | Train: 2.9384 | Val: 2.9740 | Step: 138.4ms | ETA: 0:00:37 | Store: 152016 vecs, 319 tokens, 9.28MB
+[17:04:52] [E10-TokenStore] Step  4800/5000 | Train: 2.8277 | Val: 2.6993 | Step: 89.6ms | ETA: 0:00:25 | Store: 155216 vecs, 325 tokens, 9.47MB
+[17:05:16] [E10-TokenStore] Step  4900/5000 | Train: 2.7509 | Val: 2.9251 | Step: 73.3ms | ETA: 0:00:12 | Store: 158416 vecs, 325 tokens, 9.67MB
+[17:05:40] [E10-TokenStore] Token store saved: C:\Users\ibhar\OneDrive\Desktop\attention-lab\sandbox-llm\e10-token-store\token_store.pt (161600 vectors, 9.86MB)
+[17:05:40] [E10-TokenStore] DONE — 658.1s | 70.2ms/step | Train: 2.8313 | Val: 2.8563
+[17:05:41] [SYSTEM] Total wall time: 660.9s
+[17:05:41] [SYSTEM] Generating plots...
+[17:05:41] [SYSTEM] Combined plot: C:\Users\ibhar\OneDrive\Desktop\attention-lab\sandbox-llm\e10-token-store\e10_combined.png
+[17:05:42] [SYSTEM] Split plot: C:\Users\ibhar\OneDrive\Desktop\attention-lab\sandbox-llm\e10-token-store\e10_results.png
+[17:05:42] [SYSTEM] Report: C:\Users\ibhar\OneDrive\Desktop\attention-lab\sandbox-llm\e10-token-store\experiment_report.md
+[17:05:42] [SYSTEM] Data: C:\Users\ibhar\OneDrive\Desktop\attention-lab\sandbox-llm\e10-token-store\results.json     
+[17:05:42] [SYSTEM] ============================================================
+[17:05:42] [SYSTEM] VERDICT — Val Loss Winner: Baseline
+[17:05:42] [SYSTEM] VERDICT — Generalization Winner: E10-TokenStore
+[17:05:42] [SYSTEM] ============================================================
