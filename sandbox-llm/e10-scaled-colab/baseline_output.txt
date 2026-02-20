@@ -1,0 +1,101 @@
+ Device: cuda
+GPU: Tesla T4
+VRAM: 15.6 GB
+Config: 6L × 256d × 8H, block=128
+PGA: window=32, rank=32, buffer=1024, k=16
+Training: 5000 steps, lr=0.0003, batch=16
+enwik8: 99,621,832 chars, vocab=6064
+Train: 89,659,648, Val: 9,962,184
+Models defined.
+Estimated params per model: ~7,859,456
+
+############################################################
+# PGA Scaled Experiment — 6L × 256d — enwik8
+# 5000 steps, batch=16, lr=0.0003
+############################################################
+
+
+============================================================
+Training: Baseline
+Parameters: 7,859,456
+============================================================
+[Baseline] Step     0/5000 | Train: 8.8881 | Val: 8.8923 | LR: 6.00e-07 | 18.6ms/step | ETA: 1:40:14
+[Baseline] Step   250/5000 | Train: 2.9730 | Val: 2.9577 | LR: 1.51e-04 | 22.0ms/step | ETA: 0:03:29
+[Baseline] Step   500/5000 | Train: 2.6066 | Val: 2.6222 | LR: 3.00e-04 | 16.7ms/step | ETA: 0:03:10
+[Baseline] Step   750/5000 | Train: 2.5079 | Val: 2.4975 | LR: 2.98e-04 | 16.4ms/step | ETA: 0:02:58
+[Baseline] Step  1000/5000 | Train: 2.3299 | Val: 2.3376 | LR: 2.91e-04 | 16.7ms/step | ETA: 0:02:49
+[Baseline] Step  1250/5000 | Train: 2.1996 | Val: 2.1945 | LR: 2.80e-04 | 16.4ms/step | ETA: 0:02:38
+[Baseline] Step  1500/5000 | Train: 2.0981 | Val: 2.0928 | LR: 2.65e-04 | 16.8ms/step | ETA: 0:02:27
+[Baseline] Step  1750/5000 | Train: 2.0297 | Val: 2.0415 | LR: 2.46e-04 | 17.0ms/step | ETA: 0:02:17
+[Baseline] Step  2000/5000 | Train: 1.9697 | Val: 1.9757 | LR: 2.25e-04 | 23.6ms/step | ETA: 0:02:06
+[Baseline] Step  2250/5000 | Train: 1.9293 | Val: 1.9428 | LR: 2.01e-04 | 16.9ms/step | ETA: 0:01:55
+[Baseline] Step  2500/5000 | Train: 1.8653 | Val: 1.8843 | LR: 1.76e-04 | 16.6ms/step | ETA: 0:01:44
+[Baseline] Step  2750/5000 | Train: 1.8733 | Val: 1.8574 | LR: 1.50e-04 | 16.5ms/step | ETA: 0:01:33
+[Baseline] Step  3000/5000 | Train: 1.8169 | Val: 1.8183 | LR: 1.24e-04 | 17.0ms/step | ETA: 0:01:23
+[Baseline] Step  3250/5000 | Train: 1.7960 | Val: 1.7772 | LR: 9.87e-05 | 19.0ms/step | ETA: 0:01:12
+[Baseline] Step  3500/5000 | Train: 1.7653 | Val: 1.7419 | LR: 7.50e-05 | 22.1ms/step | ETA: 0:01:02
+[Baseline] Step  3750/5000 | Train: 1.7532 | Val: 1.7429 | LR: 5.36e-05 | 19.9ms/step | ETA: 0:00:51
+[Baseline] Step  4000/5000 | Train: 1.7617 | Val: 1.7487 | LR: 3.51e-05 | 17.7ms/step | ETA: 0:00:41
+[Baseline] Step  4250/5000 | Train: 1.7346 | Val: 1.7353 | LR: 2.01e-05 | 17.0ms/step | ETA: 0:00:31
+[Baseline] Step  4500/5000 | Train: 1.7354 | Val: 1.7226 | LR: 9.05e-06 | 16.1ms/step | ETA: 0:00:20
+[Baseline] Step  4750/5000 | Train: 1.7190 | Val: 1.7294 | LR: 2.28e-06 | 20.7ms/step | ETA: 0:00:10
+
+[Baseline] DONE — 207.2s | 18.7ms/step | Train: 1.7249 | Val: 1.7265
+
+============================================================
+Training: Prop-PGA
+Parameters: 7,859,456
+============================================================
+[Prop-PGA] Step     0/5000 | Train: 8.8963 | Val: 8.9004 | LR: 6.00e-07 | 1626.0ms/step | ETA: 9 days, 21:02:08
+---------------------------------------------------------------------------
+KeyboardInterrupt                         Traceback (most recent call last)
+/tmp/ipython-input-4237833506.py in <cell line: 0>()
+    503 # 2. Prop-PGA (Window)
+    504 torch.manual_seed(SEED)
+--> 505 results['Prop-PGA'] = train_model(PropagativePGA(), 'Prop-PGA')
+    506 
+    507 # 3. Raw-Obs-Buffer
+
+5 frames/tmp/ipython-input-4237833506.py in train_model(model, name)
+    436         xb, yb = get_batch(train_data)
+    437         optimizer.zero_grad(set_to_none=True)
+--> 438         _, loss = model(xb, yb)
+    439         loss.backward()
+    440         torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
+
+/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py in _wrapped_call_impl(self, *args, **kwargs)
+   1774             return self._compiled_call_impl(*args, **kwargs)  # type: ignore[misc]
+   1775         else:
+-> 1776             return self._call_impl(*args, **kwargs)
+   1777 
+   1778     # torchrec tests the code consistency with the following code
+
+/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py in _call_impl(self, *args, **kwargs)
+   1785                 or _global_backward_pre_hooks or _global_backward_hooks
+   1786                 or _global_forward_hooks or _global_forward_pre_hooks):
+-> 1787             return forward_call(*args, **kwargs)
+   1788 
+   1789         result = None
+
+/tmp/ipython-input-4237833506.py in forward(self, idx, targets)
+    332         B, T = idx.shape
+    333         x = self.wte(idx) + self.wpe(torch.arange(T, device=idx.device))
+--> 334         P = compute_P_window(x.detach(), WINDOW_SIZE, RANK)
+    335         for block in self.blocks:
+    336             x = block(x, P=P)
+
+/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py in decorate_context(*args, **kwargs)
+    122         # pyrefly: ignore [bad-context-manager]
+    123         with ctx_factory():
+--> 124             return func(*args, **kwargs)
+    125 
+    126     return decorate_context
+
+/tmp/ipython-input-4237833506.py in compute_P_window(x, window_size, rank)
+    281 
+    282         try:
+--> 283             U, S, Vh = torch.linalg.svd(context, full_matrices=False)
+    284         except RuntimeError:
+    285             P_list.append(torch.eye(D, device=x.device).unsqueeze(0).expand(B, -1, -1))
+
+KeyboardInterrupt: 
