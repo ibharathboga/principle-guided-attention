@@ -1,0 +1,67 @@
+Total docs: 32777
+Train docs: 29499 | Val docs: 3278
+vocab size: 65
+num params: 5408
+Starting Training (Baseline) on shakespeare.txt for 500 steps...
+Step   10/500 | Train Loss: 4.0634
+Step   20/500 | Train Loss: 3.6608
+Step   30/500 | Train Loss: 3.4732
+Step   40/500 | Train Loss: 3.3326
+Step   50/500 | Train Loss: 2.7441
+Step   60/500 | Train Loss: 3.7403
+Step   70/500 | Train Loss: 2.4245
+Step   80/500 | Train Loss: 2.7216
+Step   90/500 | Train Loss: 3.1744
+Step  100/500 | Train Loss: 2.2281
+Step  100/500 | Train Loss: 2.2281 | Val Loss: 3.0190
+Step  110/500 | Train Loss: 3.4517
+Step  120/500 | Train Loss: 2.5756
+Step  130/500 | Train Loss: 4.1425
+Step  140/500 | Train Loss: 2.7874
+Step  150/500 | Train Loss: 3.0966
+Step  160/500 | Train Loss: 2.8415
+Step  170/500 | Train Loss: 3.1300
+Step  180/500 | Train Loss: 2.1308
+Step  190/500 | Train Loss: 2.3112
+Step  200/500 | Train Loss: 2.6439
+Step  200/500 | Train Loss: 2.6439 | Val Loss: 2.9016
+Step  210/500 | Train Loss: 2.6835
+Step  220/500 | Train Loss: 2.1992
+Step  230/500 | Train Loss: 2.1823
+Step  240/500 | Train Loss: 2.6193
+Step  250/500 | Train Loss: 2.3818
+Step  260/500 | Train Loss: 2.5825
+Step  270/500 | Train Loss: 2.3371
+Step  280/500 | Train Loss: 3.6251
+Step  290/500 | Train Loss: 2.2676
+Step  300/500 | Train Loss: 2.8298
+Step  300/500 | Train Loss: 2.8298 | Val Loss: 2.8509
+Step  310/500 | Train Loss: 2.4629
+Step  320/500 | Train Loss: 2.4268
+Step  330/500 | Train Loss: 2.3891
+Step  340/500 | Train Loss: 2.1053
+Step  350/500 | Train Loss: 2.7887
+Step  360/500 | Train Loss: 3.3601
+Step  370/500 | Train Loss: 2.4915
+Step  380/500 | Train Loss: 2.5695
+Step  390/500 | Train Loss: 2.2809
+Step  400/500 | Train Loss: 1.7914
+Step  400/500 | Train Loss: 1.7914 | Val Loss: 2.6873
+Step  410/500 | Train Loss: 2.3666
+Step  420/500 | Train Loss: 2.9223
+Step  430/500 | Train Loss: 2.5927
+Step  440/500 | Train Loss: 2.6590
+Step  450/500 | Train Loss: 3.1434
+Step  460/500 | Train Loss: 2.2200
+Step  470/500 | Train Loss: 2.7676
+Step  480/500 | Train Loss: 1.9223
+Step  490/500 | Train Loss: 2.5765
+Step  500/500 | Train Loss: 2.1446
+Step  500/500 | Train Loss: 2.1446 | Val Loss: 2.6567
+
+--- Inference (Baseline) ---
+Sample 1: RONIUV:
+Sample 2: Mhol har you tha
+Sample 3: Ane s he shas hy
+Sample 4: Whe irourt t lil
+Sample 5: I lar sa theee t

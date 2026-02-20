@@ -1,0 +1,82 @@
+num docs: 32777
+vocab size: 65
+num params: 5408
+Training for 500 steps on shakespeare.txt...
+train docs: 29499 | val docs: 3278
+Step    1/500 | Train Loss: 4.0082 | Val Loss: 4.2256
+Step   10/500 | Train Loss: 4.0672
+Step   20/500 | Train Loss: 3.6859
+Step   30/500 | Train Loss: 3.4664
+Step   40/500 | Train Loss: 3.2895
+Step   50/500 | Train Loss: 2.8030
+Step   60/500 | Train Loss: 3.7375
+Step   70/500 | Train Loss: 2.4516
+Step   80/500 | Train Loss: 2.7224
+Step   90/500 | Train Loss: 3.1499
+Step  100/500 | Train Loss: 2.3092
+Step  101/500 | Train Loss: 2.5215 | Val Loss: 2.8400
+Step  110/500 | Train Loss: 3.4237
+Step  120/500 | Train Loss: 2.5382
+Step  130/500 | Train Loss: 4.0911
+Step  140/500 | Train Loss: 2.7724
+Step  150/500 | Train Loss: 3.1122
+Step  160/500 | Train Loss: 2.8504
+Step  170/500 | Train Loss: 3.1036
+Step  180/500 | Train Loss: 2.0725
+Step  190/500 | Train Loss: 2.3176
+Step  200/500 | Train Loss: 2.6640
+Step  201/500 | Train Loss: 2.2040 | Val Loss: 2.7315
+Step  210/500 | Train Loss: 2.6916
+Step  220/500 | Train Loss: 2.4095
+Step  230/500 | Train Loss: 2.2048
+Step  240/500 | Train Loss: 2.6867
+Step  250/500 | Train Loss: 2.4101
+Step  260/500 | Train Loss: 2.5647
+Step  270/500 | Train Loss: 2.3509
+Step  280/500 | Train Loss: 3.5918
+Step  290/500 | Train Loss: 2.2982
+Step  300/500 | Train Loss: 2.8631
+Step  301/500 | Train Loss: 3.2404 | Val Loss: 2.7455
+Step  310/500 | Train Loss: 2.4573
+Step  320/500 | Train Loss: 2.4686
+Step  330/500 | Train Loss: 2.3766
+Step  340/500 | Train Loss: 2.1217
+Step  350/500 | Train Loss: 2.8494
+Step  360/500 | Train Loss: 3.3468
+Step  370/500 | Train Loss: 2.4264
+Step  380/500 | Train Loss: 2.5176
+Step  390/500 | Train Loss: 2.4004
+Step  400/500 | Train Loss: 1.8470
+Step  401/500 | Train Loss: 2.8065 | Val Loss: 2.4502
+Step  410/500 | Train Loss: 2.4572
+Step  420/500 | Train Loss: 2.8527
+Step  430/500 | Train Loss: 2.6102
+Step  440/500 | Train Loss: 2.7021
+Step  450/500 | Train Loss: 3.1134
+Step  460/500 | Train Loss: 2.3495
+Step  470/500 | Train Loss: 2.8100
+Step  480/500 | Train Loss: 2.0265
+Step  490/500 | Train Loss: 2.5199
+Step  500/500 | Train Loss: 2.1571
+
+--- inference (PGA, hallucinated names) ---
+sample  1: PO:
+sample  2: Wh s he f mo t e
+sample  3: Mhe he hado we s
+sample  4: And t an her tha
+sample  5: Yer the the be t
+sample  6: Yor he s s he t 
+sample  7: Ir t the manashe
+sample  8: Ther t m, the ha
+sample  9: Thand d ir an he
+sample 10: Shan be bar mee 
+sample 11: PRIONUN:
+sample 12: Houn the sh ou t
+sample 13: Hethiconou we th
+sample 14: Fd hod he ban th
+sample 15: Tou he mor tanor
+sample 16: Whege han he f p
+sample 17: Yous youthe you 
+sample 18: Whan y he t ator
+sample 19: Whathathe f f ha
+sample 20: End ge tisile he

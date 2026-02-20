@@ -1,0 +1,11 @@
+EBC1 Experiment Results
+Date: 2026-02-20 05:53:34
+Steps: 500 | Dataset: shakespeare.txt
+==================================================
+
+Baseline: Final Train Loss = 2.1446
+          Final Val Loss   = 2.6567
+PGA:      Final Train Loss = 2.1571
+          Final Val Loss   = 2.4502
+
+Delta (PGA - Base): +0.0125
