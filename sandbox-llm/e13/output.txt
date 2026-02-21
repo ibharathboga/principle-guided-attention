@@ -1,0 +1,72 @@
+[09:44:17] [SYSTEM] ============================================================
+[09:44:17] [SYSTEM] E13 — Principle Augmentation (Virtual Tokens)
+[09:44:17] [SYSTEM] Config: 5L, embd=64, lr=0.005, steps=2500
+[09:44:17] [SYSTEM] E13 PGA: cap=10000/token, adaptive_energy=0.9, MLP Query, Augmentation (Rank Adaptive)
+[09:44:17] [SYSTEM] Dataset: enwik8, block=32
+[09:44:17] [SYSTEM] ============================================================
+[09:44:17] [SYSTEM] Copied enwik8 from e10-token-store
+[09:44:20] [SYSTEM] enwik8: 99,621,832 chars, 6064 unique
+[09:44:33] [SYSTEM] Train: 89,659,648, Val: 9,962,184
+[09:44:33] [SYSTEM] Vocab: 6064
+[09:44:33] [SYSTEM] ═══ Training 2 models (Baseline in parallel, PropPGABuffer in main) ═══
+[09:44:33] [PropPGAAugment] Initialized — 1,032,448 params
+[09:44:35] [Baseline] Initialized — 1,024,064 params
+[09:44:36] [Baseline] Step     0/2500 | Train: 8.3425 | Val: 8.2066 | Norm: 3.46 | Step: 28.6ms | ETA: 0:16:06
+[09:44:37] [PropPGAAugment] Step     0/2500 | Train: 8.4052 | Val: 8.4222 | Norm: 2.45 | Step: 225.7ms | ETA: 1:30:08 | Store: 32 vecs, 0.01MB | Rank: 1.0 (Fail: 0)
+[09:44:39] [Baseline] Step   100/2500 | Train: 3.2442 | Val: 3.5898 | Norm: 3.21 | Step: 19.5ms | ETA: 0:01:02
+[09:44:41] [Baseline] Step   200/2500 | Train: 3.2799 | Val: 3.3456 | Norm: 2.17 | Step: 16.5ms | ETA: 0:00:55
+[09:44:43] [Baseline] Step   300/2500 | Train: 3.0405 | Val: 3.0365 | Norm: 2.13 | Step: 16.5ms | ETA: 0:00:51
+[09:44:45] [PropPGAAugment] Step   100/2500 | Train: 3.2858 | Val: 3.2525 | Norm: 6.92 | Step: 53.0ms | ETA: 0:03:50 | Store: 3232 vecs, 0.79MB | Rank: 10.1 (Fail: 0)
+[09:44:45] [Baseline] Step   400/2500 | Train: 3.0861 | Val: 3.0256 | Norm: 2.93 | Step: 16.8ms | ETA: 0:00:48
+[09:44:47] [Baseline] Step   500/2500 | Train: 3.1225 | Val: 3.0269 | Norm: 2.81 | Step: 21.0ms | ETA: 0:00:46
+[09:44:50] [Baseline] Step   600/2500 | Train: 2.9442 | Val: 2.9123 | Norm: 2.39 | Step: 15.2ms | ETA: 0:00:43
+[09:44:52] [Baseline] Step   700/2500 | Train: 3.0216 | Val: 3.0724 | Norm: 1.90 | Step: 16.1ms | ETA: 0:00:41
+[09:44:54] [PropPGAAugment] Step   200/2500 | Train: 3.1145 | Val: 3.3709 | Norm: 2.44 | Step: 57.0ms | ETA: 0:03:33 | Store: 6432 vecs, 1.57MB | Rank: 10.2 (Fail: 0)
+[09:44:54] [Baseline] Step   800/2500 | Train: 3.0552 | Val: 2.9925 | Norm: 2.45 | Step: 17.0ms | ETA: 0:00:38
+[09:44:56] [Baseline] Step   900/2500 | Train: 2.8150 | Val: 2.9202 | Norm: 1.86 | Step: 17.5ms | ETA: 0:00:36
+[09:44:59] [Baseline] Step  1000/2500 | Train: 2.8204 | Val: 2.9009 | Norm: 2.30 | Step: 17.9ms | ETA: 0:00:33
+[09:45:01] [Baseline] Step  1100/2500 | Train: 2.9052 | Val: 2.9297 | Norm: 3.53 | Step: 16.3ms | ETA: 0:00:31
+[09:45:03] [Baseline] Step  1200/2500 | Train: 2.8706 | Val: 2.8493 | Norm: 1.97 | Step: 20.5ms | ETA: 0:00:29
+[09:45:04] [PropPGAAugment] Step   300/2500 | Train: 3.0495 | Val: 3.0795 | Norm: 2.26 | Step: 69.7ms | ETA: 0:03:31 | Store: 9632 vecs, 2.35MB | Rank: 10.3 (Fail: 0)
+[09:45:05] [Baseline] Step  1300/2500 | Train: 2.9174 | Val: 2.9247 | Norm: 1.66 | Step: 19.9ms | ETA: 0:00:26
+[09:45:07] [Baseline] Step  1400/2500 | Train: 2.9439 | Val: 2.7599 | Norm: 1.79 | Step: 17.7ms | ETA: 0:00:24
+0:15
+[09:45:18] [Baseline] Step  1900/2500 | Train: 2.7856 | Val: 2.8551 | Norm: 1.43 | Step: 16.5ms | ETA: 0:00:13
+[09:45:21] [Baseline] Step  2000/2500 | Train: 2.7751 | Val: 2.9521 | Norm: 2.26 | Step: 19.7ms | ETA: 0:00:11
+[09:45:23] [Baseline] Step  2100/2500 | Train: 2.8709 | Val: 2.7734 | Norm: 2.65 | Step: 16.7ms | ETA: 0:00:15
+[09:45:18] [Baseline] Step  1900/2500 | Train: 2.7856 | Val: 2.8551 | Norm: 1.43 | Step: 16.5ms | ETA: 0:00:13
+[09:45:21] [Baseline] Step  2000/2500 | Train: 2.7751 | Val: 2.9521 | Norm: 2.26 | Step: 19.7ms | ETA: 0:00:11
+[09:45:23] [Baseline] Step  2100/2500 | Train: 2.8709 | Val: 2.7734 | Norm: 2.65 | Step: 16.7ms | ETA: 0:00:08
+[09:45:25] [Baseline] Step  2200/2500 | Train: 2.8644 | Val: 2.7227 | Norm: 1.73 | Step: 16.0ms | ETA: 0:00:06
+[09:45:27] [Baseline] Step  2300/2500 | Train: 2.7715 | Val: 2.7876 | Norm: 4.76 | Step: 17.4ms | ETA: 0:00:04
+[09:45:29] [PropPGAAugment] Step   500/2500 | Train: 3.0513 | Val: 3.0667 | Norm: 1.73 | Step: 79.2ms | ETA: 0:03:32 | Store: 16032 vecs, 3.91MB | Ra[09:45:30] [Baseline] Step  2400/2500 | Train: 3.0977 | Val: 2.7440 | Norm: 2.03 | Step: 18.6ms | ETA: 0:00:02
+[09:45:32] [Baseline] DONE — 56.1s | 18.5ms/step | Train: 2.7203 | Val: 2.9130
+[09:45:40] [PropPGAAugment] Step   600/2500 | Train: 3.0592 | Val: 2.9903 | Norm: 1.97 | Step: 74.5ms | ETA: 0:03:24 | Store: 19232 vecs, 4.70MB | Rank: 10.7 (Fail: 0)
+[09:45:51] [PropPGAAugment] Step   700/2500 | Train: 2.9526 | Val: 2.9014 | Norm: 2.26 | Step: 57.0ms | ETA: 0:03:14 | Store: 22432 vecs, 5.48MB | Rank: 10.7 (Fail: 0)
+[09:46:01] [PropPGAAugment] Step   800/2500 | Train: 2.8269 | Val: 2.8956 | Norm: 1.48 | Step: 78.3ms | ETA: 0:03:02 | Store: 25632 vecs, 6.26MB | Rank: 10.8 (Fail: 0)
+[09:46:13] [PropPGAAugment] Step   900/2500 | Train: 2.9154 | Val: 2.8161 | Norm: 1.41 | Step: 57.7ms | ETA: 0:02:53 | Store: 28832 vecs, 7.04MB | Rank: 10.9 (Fail: 0)
+[09:46:26] [PropPGAAugment] Step  1000/2500 | Train: 2.9693 | Val: 2.8995 | Norm: 1.59 | Step: 77.8ms | ETA: 0:02:45 | Store: 32032 vecs, 7.82MB | Rank: 10.8 (Fail: 0)
+[09:46:42] [PropPGAAugment] Step  1100/2500 | Train: 2.7691 | Val: 2.8627 | Norm: 1.52 | Step: 126.6ms | ETA: 0:02:40 | Store: 35232 vecs, 8.60MB | Rank: 10.8 (Fail: 0)
+[09:46:55] [PropPGAAugment] Step  1200/2500 | Train: 3.1296 | Val: 2.8644 | Norm: 1.24 | Step: 59.8ms | ETA: 0:02:31 | Store: 38432 vecs, 9.38MB | Rank: 10.9 (Fail: 0)
+[09:47:10] [PropPGAAugment] Step  1300/2500 | Train: 2.9393 | Val: 2.8371 | Norm: 2.02 | Step: 44.8ms | ETA: 0:02:22 | Store: 41632 vecs, 10.16MB | Rank: 10.9 (Fail: 0)
+[09:47:27] [PropPGAAugment] Step  1400/2500 | Train: 2.9823 | Val: 2.7334 | Norm: 1.84 | Step: 55.1ms | ETA: 0:02:15 | Store: 44832 vecs, 10.95MB | Rank: 10.9 (Fail: 0)
+[09:47:50] [PropPGAAugment] Step  1500/2500 | Train: 2.7154 | Val: 2.7876 | Norm: 1.38 | Step: 127.6ms | ETA: 0:02:09 | Store: 48032 vecs, 11.73MB | Rank: 10.9 (Fail: 0)
+[09:48:12] [PropPGAAugment] Step  1600/2500 | Train: 2.8607 | Val: 2.8856 | Norm: 1.57 | Step: 97.4ms | ETA: 0:02:01 | Store: 51232 vecs, 12.51MB | Rank: 10.8 (Fail: 0)
+[09:48:39] [PropPGAAugment] Step  1700/2500 | Train: 2.9733 | Val: 3.0493 | Norm: 1.30 | Step: 189.2ms | ETA: 0:01:54 | Store: 54432 vecs, 13.29MB | Rank: 10.8 (Fail: 0)
+[09:49:05] [PropPGAAugment] Step  1800/2500 | Train: 2.7157 | Val: 2.8497 | Norm: 1.53 | Step: 133.9ms | ETA: 0:01:44 | Store: 57632 vecs, 14.07MB | Rank: 10.8 (Fail: 0)
+[09:49:31] [PropPGAAugment] Step  1900/2500 | Train: 2.8714 | Val: 2.8388 | Norm: 1.22 | Step: 111.7ms | ETA: 0:01:33 | Store: 60832 vecs, 14.85MB | Rank: 10.7 (Fail: 0)
+[09:49:54] [PropPGAAugment] Step  2000/2500 | Train: 3.0248 | Val: 2.8491 | Norm: 1.03 | Step: 121.7ms | ETA: 0:01:19 | Store: 64032 vecs, 15.63MB | Rank: 10.7 (Fail: 0)
+[09:50:17] [PropPGAAugment] Step  2100/2500 | Train: 2.7745 | Val: 2.7509 | Norm: 6.89 | Step: 178.6ms | ETA: 0:01:04 | Store: 67232 vecs, 16.41MB | Rank: 10.7 (Fail: 0)
+[09:50:41] [PropPGAAugment] Step  2200/2500 | Train: 2.8323 | Val: 2.8020 | Norm: 1.14 | Step: 151.6ms | ETA: 0:00:49 | Store: 70432 vecs, 17.20MB | Rank: 10.6 (Fail: 0)
+[09:51:06] [PropPGAAugment] Step  2300/2500 | Train: 2.8589 | Val: 2.9316 | Norm: 1.18 | Step: 161.7ms | ETA: 0:00:33 | Store: 73522 vecs, 17.95MB | Rank: 10.6 (Fail: 0)
+[09:51:45] [PropPGAAugment] Step  2400/2500 | Train: 2.7623 | Val: 2.7577 | Norm: 1.16 | Step: 218.0ms | ETA: 0:00:17 | Store: 76306 vecs, 18.63MB | Rank: 10.7 (Fail: 0)
+[09:52:26] [PropPGAAugment] Token store saved: C:\Users\ibhar\OneDrive\Desktop\attention-lab\sandbox-llm\e13\token_store.pt (79037 vectors, 19.30MB)
+[09:52:26] [PropPGAAugment] DONE — 470.2s | 105.4ms/step | Train: 2.7296 | Val: 2.7885
+[09:52:26] [SYSTEM] Total wall time: 473.6s
+[09:52:26] [SYSTEM] Generating plots...
+[09:52:27] [SYSTEM] Combined plot: C:\Users\ibhar\OneDrive\Desktop\attention-lab\sandbox-llm\e13\e13_combined.png
+[09:52:27] [SYSTEM] Report: C:\Users\ibhar\OneDrive\Desktop\attention-lab\sandbox-llm\e13\experiment_report.md
+[09:52:27] [SYSTEM] ============================================================
+[09:52:27] [SYSTEM] VERDICT — Val Loss: PropPGAAugment
+[09:52:27] [SYSTEM] VERDICT — Generalization: PropPGAAugment
+[09:52:27] [SYSTEM] ============================================================
