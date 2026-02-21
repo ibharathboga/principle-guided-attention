@@ -1,0 +1,19 @@
+[10:11:22] [SYSTEM] ============================================================
+[10:11:22] [SYSTEM] E14 — Stabilized Principle Augmentation (Batch=16, Cosine LR)
+[10:11:22] [SYSTEM] Config: 5L, embd=64, lr=0.005, steps=5000, batch=16
+[10:11:22] [SYSTEM] E14 PGA: cap=10000/token, adaptive_energy=0.9, MLP Query, Augmentation (Rank Adaptive)
+[10:11:22] [SYSTEM] Dataset: enwik8, block=32
+[10:11:22] [SYSTEM] ============================================================
+[10:11:24] [SYSTEM] enwik8: 99,621,832 chars, 6064 unique
+[10:11:31] [SYSTEM] Train: 89,659,648, Val: 9,962,184
+[10:11:31] [SYSTEM] Vocab: 6064
+[10:11:31] [SYSTEM] ═══ Training 2 models (Baseline in parallel, PropPGABuffer in main) ═══
+[10:11:31] [PropPGAAugment] Initialized — 1,032,448 params
+[10:11:33] [Baseline] Initialized — 1,024,064 params
+[10:11:36] [Baseline] Step     0/5000 | Train: 7.9140 | Val: 7.8872 | Norm: 1.69 | Step: 53.5ms | ETA: 1:39:59
+[10:11:41] [Baseline] Step   100/5000 | Train: 2.8185 | Val: 2.7944 | Norm: 1.19 | Step: 35.9ms | ETA: 0:05:13
+[10:11:47] [Baseline] Step   200/5000 | Train: 2.5967 | Val: 2.6041 | Norm: 1.22 | Step: 100.8ms | ETA: 0:04:48
+[10:11:52] [Baseline] Step   300/5000 | Train: 2.4941 | Val: 2.5003 | Norm: 1.01 | Step: 37.4ms | ETA: 0:04:32
+[10:11:56] [PropPGAAugment] Step     0/5000 | Train: 7.8734 | Val: 7.8599 | Norm: 1.61 | Step: 197.5ms | ETA: 1 day, 9:23:09 | Store: 512 vecs, 0.12MB | Rank: 1.0 (Fail: 0)
+[10:11:58] [Baseline] Step   400/5000 | Train: 2.4083 | Val: 2.4348 | Norm: 0.86 | Step: 37.1ms | ETA: 0:04:23
+[10:12:03] [Baseline] Step   500/5000 | Train: 2.3547 | Val: 2.3727 | Norm: 0.93 | Step: 42.1ms | ETA: 0:04:15
